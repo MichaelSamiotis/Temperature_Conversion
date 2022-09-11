@@ -7,8 +7,7 @@ while True:
     if conversion_input in ['C', 'F']:
 
 #Asking the number to be converted
-        conversion_float = float(input('Please enter the {:s} amount to be converted: '.format(conversion_input)))
-        converted_value = float(conversion_float)
+        converted_value = float(input('Please enter the {:s} amount to be converted: '.format(conversion_input)))
 
         if conversion_input == 'C':
             F = (converted_value * 1.80 + 32)
@@ -22,4 +21,7 @@ while True:
         print('Please enter a valid value: C or F')
         continue
 
-input("Press Enter to exit")
+exit_program = input("Press any key to exit")
+if exit_program :
+    print("Exiting the Program.")
+    exit()
