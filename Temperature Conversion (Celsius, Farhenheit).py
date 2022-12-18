@@ -1,4 +1,3 @@
-import sys
 #Ask the user what conversion to do (Celsius to Fahrenheit or the other way around?)
 conversion_input = 0
 while True:
@@ -27,6 +26,7 @@ elif conversion_input == 'F':
     print(f'The amount of {converted_value} Fahrenheit degrees is {C} degrees of Celsius')
     
 #Handling of the program exit
+import sys
 exit_program = input('Press any key to exit')
 if exit_program:
     sys.exit()
